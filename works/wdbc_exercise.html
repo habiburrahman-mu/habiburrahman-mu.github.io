@@ -61,7 +61,7 @@
                               validationData: convertedTestingData,
                               callbacks:{
                                   onEpochEnd: async(epoch, logs) =>{
-                                     document.write("Epoch: " + epoch + " Loss: " + logs.loss + " Accuracy: " + logs.acc+"<br>");
+                                     document.write("<br>"+"Epoch: " + epoch + " Loss: " + logs.loss + " Accuracy: " + logs.acc);
                                   }
                               }});
             await model.save('downloads://my_model');
