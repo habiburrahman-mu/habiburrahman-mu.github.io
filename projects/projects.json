@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "Buy Rent Home",
+      "description": "A real estate platform for buying and renting properties with modern .NET backend and Angular frontend.",
+      "techStack": ["ASP.NET Core", "Angular", "SQL Server"],
+      "liveUrl": "brh",
+      "repoUrl": "https://github.com/habiburrahman-mu/Buy-and-Rent-Home-UI"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects of Habibur Rahman</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            /* slate-50 */
+            --card: #ffffff;
+            /* white */
+            --text: #0f172a;
+            /* slate-900 */
+            --muted: #64748b;
+            /* slate-500 */
+            --border: #e2e8f0;
+            /* slate-200 */
+            --accent: #2563eb;
+            /* blue-600 */
+            --accent-soft: #dbeafe;
+            /* blue-100 */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg, #f8fafc, #eef2ff);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 3rem 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.75rem;
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem 1.5rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .description {
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.65rem;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .actions {
+            margin-top: 0.75rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .actions a {
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 0.55rem 0.9rem;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            color: var(--text);
+            transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .actions a.primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .actions a:hover {
+            background: #f1f5f9;
+        }
+
+        .actions a.primary:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem 2.5rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Projects</h1>
+        <p>Selected work & side projects</p>
+    </header>
+
+    <main>
+        <div id="projects" class="grid"></div>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Habibur Rahman
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        async function loadProjects() {
+            try {
+                const res = await fetch('projects.json');
+                if (!res.ok) throw new Error('Failed to load projects.json');
+                const data = await res.json();
+
+                const container = document.getElementById('projects');
+                container.innerHTML = '';
+
+                data.projects.forEach(p => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+
+                    card.innerHTML = `
+            <h2>${p.name}</h2>
+            <div class="description">${p.description}</div>
+            <div class="tags">
+              ${p.techStack.map(t => `<span class="tag">${t}</span>`).join('')}
+            </div>
+            <div class="actions">
+              ${p.liveUrl ? `<a class="primary" href="${p.liveUrl}" target="_blank">Live</a>` : ''}
+              ${p.repoUrl ? `<a href="${p.repoUrl}" target="_blank">Source</a>` : ''}
+            </div>
+          `;
+
+                    container.appendChild(card);
+                });
+            } catch (err) {
+                document.getElementById('projects').innerHTML = '<p style="color:#64748b">Unable to load projects.</p>';
+                console.error(err);
+            }
+        }
+
+        loadProjects();
+    </script>
+</body>
+
+</html>
