@@ -1,0 +1,1 @@
+import{b as o}from"./chunk-MRTEVZJR.js";import"./chunk-7CGTOI24.js";var n=[{path:o.Login,loadComponent:()=>import("./chunk-RG6JTJAL.js").then(t=>t.LoginComponent)},{path:o.Register,loadComponent:()=>import("./chunk-CDYJKRIC.js").then(t=>t.RegisterComponent)},{path:"",pathMatch:"full",redirectTo:o.Login}];export{n as AUTH_FEATURE_ROUTES};
