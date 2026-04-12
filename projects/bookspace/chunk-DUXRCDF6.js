@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var o=[{path:"",loadComponent:()=>import("./chunk-QUXIKDTQ.js").then(t=>t.AdminLayoutComponent),children:[{path:"",redirectTo:"users",pathMatch:"full"},{path:"users",loadComponent:()=>import("./chunk-EOJVVABV.js").then(t=>t.UserListComponent)}]}];export{o as ADMIN_ROUTES};
