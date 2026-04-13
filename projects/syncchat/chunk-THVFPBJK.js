@@ -1,1 +1,0 @@
-import{C as n,K as m}from"./chunk-3AL25NAH.js";import{c as e,d as a}from"./chunk-GVUMNT73.js";import{Q as t,nc as r}from"./chunk-GOIMXYJM.js";var v=(u,c)=>{let o=t(m),i=t(r);return o.isMobile()?!0:(i.navigate([e.Chat]),!1)};var F=(u,c)=>{let o=t(n),i=t(r);return o.hasValidToken()||i.navigate(["./",e.Auth,a.Login]),!0};export{F as a,v as b};
