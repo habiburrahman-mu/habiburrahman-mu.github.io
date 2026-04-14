@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1776151936304,
+  "timestamp": 1776152619967,
   "index": "/projects/syncchat/index.html",
   "assetGroups": [
     {
@@ -95,7 +95,7 @@
     "/projects/syncchat/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/projects/syncchat/index.html": "763ac3cd56b1b1753eb3bc26af83181aa491f415",
     "/projects/syncchat/main-3M6LVGCR.js": "288457ad75939adfb315dc18488dd38506560c04",
-    "/projects/syncchat/manifest.webmanifest": "265cb48bd5e5aae15d23cbec8257c60d52651d87",
+    "/projects/syncchat/manifest.webmanifest": "abc46b06edb699435f658f710f9f96a4447dde94",
     "/projects/syncchat/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
     "/projects/syncchat/styles-XZD6RTV2.css": "95ccc3c917df3e981bfee02da51058bf7873c391"
   },
