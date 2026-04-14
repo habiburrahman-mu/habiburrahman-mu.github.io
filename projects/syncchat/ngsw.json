@@ -1,0 +1,121 @@
+{
+  "configVersion": 1,
+  "timestamp": 1776151936304,
+  "index": "/projects/syncchat/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/projects/syncchat/chunk-222RVZ6K.js",
+        "/projects/syncchat/chunk-2EBKNK63.js",
+        "/projects/syncchat/chunk-2FDCJI7F.js",
+        "/projects/syncchat/chunk-33Q2TK6O.js",
+        "/projects/syncchat/chunk-ABH7P4XJ.js",
+        "/projects/syncchat/chunk-BS4W3V27.js",
+        "/projects/syncchat/chunk-C5P7ZISS.js",
+        "/projects/syncchat/chunk-EZJ35YNX.js",
+        "/projects/syncchat/chunk-J56MERB7.js",
+        "/projects/syncchat/chunk-KIAJXP2F.js",
+        "/projects/syncchat/chunk-LUDNAZCC.js",
+        "/projects/syncchat/chunk-NFAA7NHD.js",
+        "/projects/syncchat/chunk-NK34ZGTP.js",
+        "/projects/syncchat/chunk-PAULEWOD.js",
+        "/projects/syncchat/chunk-PWM2PXBQ.js",
+        "/projects/syncchat/chunk-Y26A2Q6S.js",
+        "/projects/syncchat/chunk-Y5REMFRC.js",
+        "/projects/syncchat/chunk-YLE4AHU4.js",
+        "/projects/syncchat/chunk-YRP2BHWL.js",
+        "/projects/syncchat/chunk-ZMQDO2MC.js",
+        "/projects/syncchat/favicon.ico",
+        "/projects/syncchat/index.html",
+        "/projects/syncchat/main-3M6LVGCR.js",
+        "/projects/syncchat/manifest.webmanifest",
+        "/projects/syncchat/polyfills-5CFQRCPP.js",
+        "/projects/syncchat/styles-XZD6RTV2.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/projects/syncchat/assets/animations/login.json",
+        "/projects/syncchat/assets/animations/not-found.json",
+        "/projects/syncchat/assets/animations/register.json",
+        "/projects/syncchat/assets/audio/notification-tone.mp3",
+        "/projects/syncchat/assets/global.scss",
+        "/projects/syncchat/assets/icons/icon-192.png",
+        "/projects/syncchat/assets/icons/icon-512.png",
+        "/projects/syncchat/assets/icons/icon.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/projects/syncchat/assets/animations/login.json": "7a60d985c104bf6b77a95c4f908f4f25518da393",
+    "/projects/syncchat/assets/animations/not-found.json": "971cc510e23aee5c0625d1776262eac29cf18271",
+    "/projects/syncchat/assets/animations/register.json": "7cca28ca34eac96c5d18b4423ec97efedf8ea7ec",
+    "/projects/syncchat/assets/audio/notification-tone.mp3": "db981dc86ef5afd6fc600055f5e786be3b20cf05",
+    "/projects/syncchat/assets/global.scss": "0a98eb4c7820f50c89499115108c4960ce59ec6f",
+    "/projects/syncchat/assets/icons/icon-192.png": "4a98bfcc6cf0c30224a4dee1d830b26434f66523",
+    "/projects/syncchat/assets/icons/icon-512.png": "7528e24a591a758a23e02ced51267b94003d4281",
+    "/projects/syncchat/assets/icons/icon.svg": "ec2b3b0a6e4d93f59181db91b97b9fc83fbe758d",
+    "/projects/syncchat/chunk-222RVZ6K.js": "b69e34b671aef1bfceadc45042a909726077a0b0",
+    "/projects/syncchat/chunk-2EBKNK63.js": "0b3601652e2a7a7636a6832e6c3b5957e68ecf1f",
+    "/projects/syncchat/chunk-2FDCJI7F.js": "1647f5b9cf309584e64c4fb5756d912c889400e7",
+    "/projects/syncchat/chunk-33Q2TK6O.js": "a8cdfd571df0809da928891a4e583449ae6b4695",
+    "/projects/syncchat/chunk-ABH7P4XJ.js": "a363fe2ad0c498df581f62b99ba578eec57aa1b2",
+    "/projects/syncchat/chunk-BS4W3V27.js": "01ac25685aa0380d5db546a3b6ca15c9be612d43",
+    "/projects/syncchat/chunk-C5P7ZISS.js": "46e6237ce861e435900146011776055a2c417e35",
+    "/projects/syncchat/chunk-EZJ35YNX.js": "4df75660f0e1db890c3b2c6ede217fccb53b9679",
+    "/projects/syncchat/chunk-J56MERB7.js": "ff1bf3141d5a36d1a557115bf791e69485a61d2a",
+    "/projects/syncchat/chunk-KIAJXP2F.js": "5d545487a9a8f73642e82cf5bed3190005653bab",
+    "/projects/syncchat/chunk-LUDNAZCC.js": "4d6e95c0eaba126a9c60a2f22cec9ea4ec1035df",
+    "/projects/syncchat/chunk-NFAA7NHD.js": "8825cfb5f86426addeae682094fcb88618ff30c9",
+    "/projects/syncchat/chunk-NK34ZGTP.js": "088171af4f985a6b5cefd6a7e97e568ad37e988b",
+    "/projects/syncchat/chunk-PAULEWOD.js": "14f472a678272c8ad91ab733d2539a24beb26ff9",
+    "/projects/syncchat/chunk-PWM2PXBQ.js": "9b9a4f198522d6b65940ab71ae64ef4de762c1a7",
+    "/projects/syncchat/chunk-Y26A2Q6S.js": "64f2be29c84c81589d292b6d4bab333951c6f619",
+    "/projects/syncchat/chunk-Y5REMFRC.js": "0cf0e01c62e385ee221e97c97701ce2d9fa7db04",
+    "/projects/syncchat/chunk-YLE4AHU4.js": "3dc539ff10dbf211a8936822b3c9cfa1117f9f66",
+    "/projects/syncchat/chunk-YRP2BHWL.js": "e8379a84042456f5351f78f3bc3d1145a460c943",
+    "/projects/syncchat/chunk-ZMQDO2MC.js": "fd4d100a1053641cd1353574023ee8a1d4633671",
+    "/projects/syncchat/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/projects/syncchat/index.html": "763ac3cd56b1b1753eb3bc26af83181aa491f415",
+    "/projects/syncchat/main-3M6LVGCR.js": "288457ad75939adfb315dc18488dd38506560c04",
+    "/projects/syncchat/manifest.webmanifest": "265cb48bd5e5aae15d23cbec8257c60d52651d87",
+    "/projects/syncchat/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
+    "/projects/syncchat/styles-XZD6RTV2.css": "95ccc3c917df3e981bfee02da51058bf7873c391"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
